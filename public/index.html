@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StyleAdvisor AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <div class="container">
+        <header>
+          <div class="logo-container">
+            <!-- Mengubah ikon pesawat menjadi ikon baju -->
+            <i class="fa-solid fa-shirt logo-icon" style="color: white"></i>
+          </div>
+          <div>
+            <h1>StyleAdvisor AI</h1>
+            <p class="subtitle">Your Personal Fashion Assistant</p>
+          </div>
+        </header>
+
+        <div id="chat-box" class="chat-box">
+          <div class="message bot">
+            <p>
+              Halo! Aku StyleAdvisor, asisten fashion AI personalmu! ✨
+              Ceritakan dulu yuk, kamu mau pakai baju untuk acara apa hari ini?
+              👗
+            </p>
+          </div>
+        </div>
+
+        <form id="chat-form">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="user-input"
+              placeholder="Tanya soal outfit, budget, mix & match..."
+              autocomplete="off"
+              required
+            />
+            <button type="submit">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
